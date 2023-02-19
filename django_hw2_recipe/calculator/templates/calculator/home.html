@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Домашняя страница</title>
+</head>
+<body>
+<h2>Выберете рецепт</h2>
+    {% for title, url in pages.items %}
+        <h3><a href="{{ url }}">{{ title }}</a></h3>
+    {% endfor %}
+</body>
+</html>
